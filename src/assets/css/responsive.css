@@ -1,0 +1,65 @@
+/* ===============================================
+   RESPONSIVE DESIGN
+=============================================== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: var(--space-4);
+        text-align: center;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-4);
+    }
+
+    .hero-content h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .hero-banner {
+        padding: var(--space-12) 0;
+    }
+
+    .quote-content blockquote {
+        font-size: var(--font-size-xl);
+    }
+
+    .quote-content blockquote::before {
+        display: none;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content,
+    .contact-form-container {
+        margin: var(--space-6) auto;
+        padding: var(--space-6);
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-content h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-content p {
+        font-size: var(--font-size-lg);
+    }
+
+    .container {
+        padding: 0 var(--space-3);
+    }
+}

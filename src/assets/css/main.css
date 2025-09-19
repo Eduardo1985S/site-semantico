@@ -1,0 +1,24 @@
+/* ===============================================
+   MAIN STYLESHEET - IMPORTS ALL COMPONENTS
+=============================================== */
+
+/* CSS Variables - Design Tokens */
+@import url('variables.css');
+
+/* Base Styles - Reset, typography, global styles */
+@import url('base.css');
+
+/* Utility Classes - Helper classes */
+@import url('utilities.css');
+
+/* Layout Components - Container, grid, positioning */
+@import url('layout.css');
+
+/* UI Components - Header, cards, buttons, footer */
+@import url('components.css');
+
+/* Page-specific styles - About, contact, etc. */
+@import url('pages.css');
+
+/* Responsive Design - Media queries and breakpoints */
+@import url('responsive.css');

@@ -63,16 +63,31 @@ Este projeto demonstra a implementação de um site moderno e profissional utili
 ## 📁 Estrutura do Projeto
 
 ```
-projeto/
-├── index.html              # Página principal
-├── pages/
-│   ├── sobre.html          # Página sobre
-│   └── contato.html        # Página de contato
-├── assets/
-│   └── css/
-│       └── style.css       # Estilos principais
-├── README.md               # Documentação
-└── favicon.ico            # Ícone do site
+site-semantico/
+├── 📄 index.html                    # Página inicial
+├── 📖 README.md                     # Documentação do projeto
+├── 📁 src/                          # Código fonte
+│   ├── 📁 assets/                   # Recursos estáticos
+│   │   ├── 📁 css/                  # Folhas de estilo modulares
+│   │   │   ├── 🎨 main.css          # Arquivo principal (importa módulos)
+│   │   │   ├── 🔧 variables.css     # Variáveis CSS e design tokens
+│   │   │   ├── 🌐 base.css          # Reset CSS e estilos globais
+│   │   │   ├── 🔨 utilities.css     # Classes utilitárias
+│   │   │   ├── 📐 layout.css        # Layout e grid system
+│   │   │   ├── 🧩 components.css    # Componentes da UI
+│   │   │   ├── 📄 pages.css         # Estilos específicos das páginas
+│   │   │   └── 📱 responsive.css    # Media queries e responsividade
+│   │   ├── 📁 images/               # Imagens do projeto
+│   │   └── 📁 js/                   # Scripts JavaScript
+│   └── 📁 pages/                    # Páginas HTML
+│       ├── 📄 sobre.html            # Página sobre
+│       ├── 📄 contato.html          # Página de contato
+│       ├── 📄 politica-privacidade.html # Política de privacidade
+│       ├── 📄 termos-uso.html       # Termos de uso
+│       ├── 📄 cookies.html          # Política de cookies
+│       └── 📄 suporte.html          # Central de suporte
+├── 📁 docs/                         # Documentação
+└── 📁 public/                       # Arquivos públicos
 ```
 
 ## 🛠 Tecnologias
@@ -184,16 +199,13 @@ cd site-semantico
 ```bash
 # Abra o index.html diretamente ou use um servidor local
 python -m http.server 8000
-# ou
+# ou usando Node.js
 npx serve .
 ```
 
 ### 3. Desenvolvimento
 
-```bash
-# Use um live server para desenvolvimento
-npx live-server
-```
+Para desenvolvimento local, você pode usar qualquer servidor web simples.
 
 ## 🎨 Personalização
 
@@ -263,11 +275,7 @@ Contribuições são bem-vindas! Por favor:
 - Teste a acessibilidade
 - Documente mudanças significativas
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-## 👨‍💻 Autor
+## ‍💻 Autor
 
 **Seu Nome**
 - GitHub: [@seu-usuario](https://github.com/seu-usuario)
