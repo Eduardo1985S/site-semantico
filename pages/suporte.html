@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Central de Suporte - Tire suas dúvidas, encontre tutoriais e obtenha ajuda especializada.">
+    <title>Suporte - Minha Página Exemplo</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Central de Suporte</h1>
+                <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="hero-banner" aria-labelledby="support-hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 id="support-hero-title">Como Podemos Ajudar?</h2>
+                    <p>Encontre respostas rápidas, tutoriais detalhados e suporte especializado para todas suas
+                        necessidades.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section" aria-labelledby="search-section">
+            <div class="container">
+                <div class="quote-content">
+                    <h2 id="search-section" class="visually-hidden">Busca de Suporte</h2>
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <input type="search" placeholder="Digite sua dúvida ou palavra-chave..."
+                            style="width: 100%; padding: 1rem; border: 2px solid var(--primary-300); border-radius: var(--radius-lg); font-size: 1.1rem; margin-bottom: 1rem;"
+                            aria-label="Buscar no suporte">
+                        <button class="submit-button" style="padding: 0.8rem 2rem;"
+                            onclick="alert('Funcionalidade de busca seria implementada aqui')">
+                            🔍 Buscar Ajuda
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section" aria-labelledby="support-options">
+            <div class="container">
+                <h2 id="support-options" class="text-center"
+                    style="margin-bottom: 2rem; font-size: var(--font-size-3xl);">Opções de Suporte</h2>
+
+                <div class="cards-grid" style="margin-bottom: 3rem;">
+                    <article class="card">
+                        <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">📚</div>
+                        <h3>Base de Conhecimento</h3>
+                        <p>Artigos, tutoriais e guias detalhados para resolver as dúvidas mais comuns.</p>
+                        <div style="margin-top: 1rem;">
+                            <button class="submit-button" style="width: 100%; padding: 0.8rem;"
+                                onclick="alert('Redirecionaria para base de conhecimento')">
+                                Acessar Artigos
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">💬</div>
+                        <h3>Chat Online</h3>
+                        <p>Suporte em tempo real com nossa equipe especializada durante horário comercial.</p>
+                        <div style="margin-top: 1rem;">
+                            <button class="submit-button"
+                                style="width: 100%; padding: 0.8rem; background: var(--success);"
+                                onclick="alert('Abriria chat de suporte')">
+                                🟢 Iniciar Chat
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">📧</div>
+                        <h3>Suporte por E-mail</h3>
+                        <p>Envie sua dúvida detalhada e receba resposta completa em até 24 horas.</p>
+                        <div style="margin-top: 1rem;">
+                            <button class="submit-button" style="width: 100%; padding: 0.8rem;"
+                                onclick="window.location.href='contato.html'">
+                                Enviar E-mail
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">📞</div>
+                        <h3>Suporte Telefônico</h3>
+                        <p>Atendimento direto por telefone para casos urgentes e suporte técnico avançado.</p>
+                        <div style="margin-top: 1rem;">
+                            <button class="submit-button"
+                                style="width: 100%; padding: 0.8rem; background: var(--primary-700);"
+                                onclick="alert('Mostraria números de telefone')">
+                                Ver Telefones
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="about-content">
+                    <h3>❓ Perguntas Frequentes (FAQ)</h3>
+
+                    <details
+                        style="margin-bottom: 1rem; border: 1px solid var(--gray-300); border-radius: var(--radius-md); padding: 1rem;">
+                        <summary
+                            style="font-weight: 600; color: var(--primary-600); cursor: pointer; margin-bottom: 0.5rem;">
+                            Como posso entrar em contato com o suporte?
+                        </summary>
+                        <p>Oferecemos múltiplos canais: chat online (horário comercial), e-mail (24h), telefone
+                            (urgências) e formulário de contato. Escolha a opção que melhor se adequa à sua necessidade.
+                        </p>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 1rem; border: 1px solid var(--gray-300); border-radius: var(--radius-md); padding: 1rem;">
+                        <summary
+                            style="font-weight: 600; color: var(--primary-600); cursor: pointer; margin-bottom: 0.5rem;">
+                            Qual o horário de funcionamento do suporte?
+                        </summary>
+                        <p><strong>Chat e Telefone:</strong> Segunda a sexta, 8h às 18h<br>
+                            <strong>E-mail:</strong> 24/7 (resposta em até 24h)<br>
+                            <strong>Emergências:</strong> Disponível 24/7 para clientes premium
+                        </p>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 1rem; border: 1px solid var(--gray-300); border-radius: var(--radius-md); padding: 1rem;">
+                        <summary
+                            style="font-weight: 600; color: var(--primary-600); cursor: pointer; margin-bottom: 0.5rem;">
+                            Como posso acompanhar minha solicitação de suporte?
+                        </summary>
+                        <p>Toda solicitação recebe um número de protocolo. Você pode acompanhar o status por e-mail ou
+                            através do portal do cliente com seu login e senha.</p>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 1rem; border: 1px solid var(--gray-300); border-radius: var(--radius-md); padding: 1rem;">
+                        <summary
+                            style="font-weight: 600; color: var(--primary-600); cursor: pointer; margin-bottom: 0.5rem;">
+                            Existe algum custo para o suporte técnico?
+                        </summary>
+                        <p>O suporte básico é gratuito para todos os usuários. Suporte avançado, consultoria
+                            personalizada e suporte prioritário estão disponíveis em planos premium.</p>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 1rem; border: 1px solid var(--gray-300); border-radius: var(--radius-md); padding: 1rem;">
+                        <summary
+                            style="font-weight: 600; color: var(--primary-600); cursor: pointer; margin-bottom: 0.5rem;">
+                            Como posso sugerir melhorias ou novas funcionalidades?
+                        </summary>
+                        <p>Adoramos receber feedback! Use nosso formulário de sugestões, envie e-mail para
+                            sugestoes@minhaempresa.com ou participe de nossa comunidade online.</p>
+                    </details>
+
+                    <details
+                        style="margin-bottom: 1rem; border: 1px solid var(--gray-300); border-radius: var(--radius-md); padding: 1rem;">
+                        <summary
+                            style="font-weight: 600; color: var(--primary-600); cursor: pointer; margin-bottom: 0.5rem;">
+                            O que fazer em caso de problemas técnicos urgentes?
+                        </summary>
+                        <p>Para emergências, use nosso canal prioritário: (11) 99999-0000 ou emergency@minhaempresa.com.
+                            Descreva o problema, impacto e urgência para atendimento imediato.</p>
+                    </details>
+
+                    <h3>🔧 Recursos de Autoajuda</h3>
+                    <ul class="values-list">
+                        <li><strong>Tutoriais em Vídeo:</strong> Passo a passo visual para principais funcionalidades
+                        </li>
+                        <li><strong>Documentação Técnica:</strong> Guias detalhados para desenvolvedores</li>
+                        <li><strong>Fórum da Comunidade:</strong> Troque experiências com outros usuários</li>
+                        <li><strong>Downloads:</strong> Manuais, templates e recursos adicionais</li>
+                        <li><strong>Webinars:</strong> Treinamentos online regulares</li>
+                        <li><strong>Status do Sistema:</strong> Verifique disponibilidade dos serviços</li>
+                    </ul>
+
+                    <h3>📋 Tipos de Suporte Disponíveis</h3>
+
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                        <div style="background: var(--gray-100); padding: 1.5rem; border-radius: var(--radius-lg);">
+                            <h4 style="color: var(--primary-600); margin-bottom: 1rem;">🆓 Suporte Gratuito</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>✅ Base de conhecimento</li>
+                                <li>✅ Fórum da comunidade</li>
+                                <li>✅ E-mail básico (48h)</li>
+                                <li>✅ Chat (horário comercial)</li>
+                                <li>❌ Suporte telefônico</li>
+                                <li>❌ Suporte prioritário</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="background: var(--primary-50); padding: 1.5rem; border-radius: var(--radius-lg); border: 2px solid var(--primary-200);">
+                            <h4 style="color: var(--primary-600); margin-bottom: 1rem;">⭐ Suporte Premium</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>✅ Tudo do gratuito</li>
+                                <li>✅ E-mail prioritário (4h)</li>
+                                <li>✅ Suporte telefônico</li>
+                                <li>✅ Chat prioritário</li>
+                                <li>✅ Suporte técnico avançado</li>
+                                <li>✅ Consultoria personalizada</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3>📞 Informações de Contato</h3>
+                    <div
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2rem;">📧</div>
+                            <h4>E-mail Suporte</h4>
+                            <p>suporte@minhaempresa.com</p>
+                            <small>Resposta em até 24h</small>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2rem;">📱</div>
+                            <h4>WhatsApp</h4>
+                            <p>(11) 99999-1234</p>
+                            <small>8h às 18h</small>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2rem;">☎️</div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3333-4444</p>
+                            <small>Horário comercial</small>
+                        </div>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2rem;">🚨</div>
+                            <h4>Emergência</h4>
+                            <p>(11) 99999-0000</p>
+                            <small>24h para premiums</small>
+                        </div>
+                    </div>
+
+                    <div
+                        style="background: var(--primary-600); color: white; padding: 2rem; border-radius: var(--radius-lg); text-align: center; margin: 2rem 0;">
+                        <h4 style="color: white; margin-bottom: 1rem;">💡 Dica: Como Obter Suporte Mais Rápido</h4>
+                        <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                            <li><strong>Seja específico:</strong> Descreva exatamente o problema</li>
+                            <li><strong>Inclua detalhes:</strong> Versão, navegador, sistema operacional</li>
+                            <li><strong>Passos para reproduzir:</strong> Como chegou ao erro</li>
+                            <li><strong>Screenshots:</strong> Imagens ajudam muito no diagnóstico</li>
+                            <li><strong>Urgência:</strong> Classifique a prioridade corretamente</li>
+                        </ul>
+                    </div>
+
+                    <h3>🎯 Compromisso com a Qualidade</h3>
+                    <p>Nossos indicadores de qualidade no atendimento:</p>
+                    <ul class="values-list">
+                        <li><strong>Tempo de Resposta:</strong> 95% dos e-mails respondidos em até 4 horas</li>
+                        <li><strong>Satisfação:</strong> Nota média 4.8/5 em pesquisas de satisfação</li>
+                        <li><strong>Resolução:</strong> 85% dos problemas resolvidos no primeiro contato</li>
+                        <li><strong>Disponibilidade:</strong> 99.9% de uptime em nossos canais de suporte</li>
+                        <li><strong>Equipe:</strong> Técnicos certificados e em treinamento contínuo</li>
+                    </ul>
+                    </article>
+                </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <ul>
+                        <li><a href="politica-privacidade.html" rel="noopener">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html" rel="noopener">Termos de Uso</a></li>
+                        <li><a href="cookies.html" rel="noopener">Cookies</a></li>
+                        <li><a href="suporte.html" aria-current="page">Suporte</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

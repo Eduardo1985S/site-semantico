@@ -1,76 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site exemplo moderno com HTML semântico e CSS profissional demonstrando boas práticas de desenvolvimento web.">
+    <meta name="keywords" content="HTML, CSS, web development, semântico, responsivo">
+    <meta name="author" content="Seu Nome">
+    <title>Minha Página Exemplo - Desenvolvimento Web Moderno</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
 <body>
-    <header>
+    <header class="site-header" role="banner">
         <div class="container">
-            <h1>Minha Página Exemplo</h1>
-            <nav>
-                <a href="#">Início</a>
-                <a href="./pages/sobre.html">Sobre</a>
-                <a href="./pages/contato.html">Contato</a>
-            </nav>
+            <div class="header-content">
+                <h1 class="site-title">Minha Página Exemplo</h1>
+                <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="#" aria-current="page" class="active">Início</a></li>
+                        <li><a href="./pages/sobre.html">Sobre</a></li>
+                        <li><a href="./pages/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section class="banner">
+
+    <main role="main">
+        <section class="hero-banner" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 id="hero-title">Bem-vindo ao Futuro do Desenvolvimento Web</h2>
+                    <p>Criando experiências digitais excepcionais com tecnologia moderna e design responsivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section" aria-labelledby="quote-heading">
+            <div class="container">
+                <div class="quote-content">
+                    <h2 id="quote-heading" class="visually-hidden">Citação Inspiracional</h2>
+                    <blockquote cite="https://example.com">
+                        O sucesso é a soma de pequenos esforços repetidos dia após dia.
+                        <cite class="quote-author">— Robert Collier</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section" aria-labelledby="cards-title">
+            <div class="container">
+                <h2 id="cards-title" class="visually-hidden">Nossos Serviços e Conteúdos</h2>
+
+                <div class="cards-grid">
+                    <article class="card">
+                        <img src="https://picsum.photos/400/200?random=1" alt="Desenvolvimento Frontend"
+                            class="card-image" loading="lazy">
+                        <h3>Desenvolvimento Frontend</h3>
+                        <p>Criação de interfaces modernas e responsivas utilizando as mais recentes tecnologias web.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/400/200?random=2" alt="Design Responsivo" class="card-image"
+                            loading="lazy">
+                        <h3>Design Responsivo</h3>
+                        <p>Layouts que se adaptam perfeitamente a qualquer dispositivo, desde smartphones até desktops.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/400/200?random=3" alt="Performance e SEO" class="card-image"
+                            loading="lazy">
+                        <h3>Performance e SEO</h3>
+                        <p>Otimização avançada para garantir carregamento rápido e melhor posicionamento nos buscadores.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://picsum.photos/400/200?random=4" alt="Acessibilidade Web" class="card-image"
+                            loading="lazy">
+                        <h3>Acessibilidade Web</h3>
+                        <p>Desenvolvimento inclusivo seguindo as diretrizes WCAG para atender todos os usuários.</p>
+                    </article>
+
+                    <div class="featured-card">
+                        <h2>Transforme Sua Presença Digital</h2>
+                        <p>Junte-se a centenas de empresas que já transformaram seus negócios com nossas soluções web
+                            inovadoras e estratégias digitais eficazes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <h2>Bem-vindo ao seu novo site!</h2>
-            <p>Um banner bonito para chamar atenção.</p>
-        </div>
-    </section>
-    <section class="citacao">
-        <div class="container">
-            <blockquote>
-                "O sucesso é a soma de pequenos esforços repetidos dia após dia."
-                <span>- Robert Collier</span>
-            </blockquote>
-        </div>
-    </section>
-    <section class="cards">
-        <div class="container">
-            <div class="card">
-                <img src="https://picsum.photos/200/120?random=1" alt="Imagem mockada 1"
-                    style="width:100%;border-radius:0.3rem 0.3rem 0 0;object-fit:cover;">
-                <h3>Card 1</h3>
-                <p>Conteúdo do card 1.</p>
+            <div class="footer-content">
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <ul>
+                        <li><a href="pages/politica-privacidade.html" rel="noopener">Política de Privacidade</a></li>
+                        <li><a href="pages/termos-uso.html" rel="noopener">Termos de Uso</a></li>
+                        <li><a href="pages/cookies.html" rel="noopener">Cookies</a></li>
+                        <li><a href="pages/suporte.html" rel="noopener">Suporte</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
             </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/120?random=2" alt="Imagem mockada 2"
-                    style="width:100%;border-radius:0.3rem 0.3rem 0 0;object-fit:cover;">
-                <h3>Card 2</h3>
-                <p>Conteúdo do card 2.</p>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/120?random=3" alt="Imagem mockada 3"
-                    style="width:100%;border-radius:0.3rem 0.3rem 0 0;object-fit:cover;">
-                <h3>Card 3</h3>
-                <p>Conteúdo do card 3.</p>
-            </div>
-            <div class="card">
-                <img src="https://picsum.photos/200/120?random=4" alt="Imagem mockada 4"
-                    style="width:100%;border-radius:0.3rem 0.3rem 0 0;object-fit:cover;">
-                <h3>Card 4</h3>
-                <p>Conteúdo do card 4.</p>
-            </div>
-            <div class="card-destaque">
-                <h2>Card Grande em Destaque</h2>
-                <p>Este card ocupa toda a largura abaixo dos outros cards.</p>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
-            <nav>
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Uso</a>
-            </nav>
         </div>
     </footer>
 </body>

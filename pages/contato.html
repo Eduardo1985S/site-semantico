@@ -1,49 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>Contato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Entre em contato conosco. Estamos prontos para ajudar com seus projetos de desenvolvimento web.">
+    <title>Contato - Minha Página Exemplo</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header" role="banner">
         <div class="container">
-            <h1>Contato</h1>
-            <nav>
-                <a href="../index.html">Início</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+            <div class="header-content">
+                <h1 class="site-title">Contato</h1>
+                <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html" aria-current="page" class="active">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section class="banner">
+
+    <main role="main">
+        <section class="hero-banner" aria-labelledby="contact-hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 id="contact-hero-title">Vamos Conversar</h2>
+                    <p>Tem um projeto em mente? Entre em contato e vamos transformar suas ideias em realidade digital.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" required aria-describedby="nome-error"
+                                autocomplete="name" placeholder="Digite seu nome completo">
+                            <span id="nome-error" class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error"
+                                autocomplete="email" placeholder="seu@email.com">
+                            <span id="email-error" class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" autocomplete="tel"
+                                placeholder="(11) 99999-9999">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" name="assunto" required aria-describedby="assunto-error">
+                                <option value="">Selecione um assunto</option>
+                                <option value="projeto">Novo Projeto</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="parceria">Parceria</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <span id="assunto-error" class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" required
+                                aria-describedby="mensagem-error mensagem-help"
+                                placeholder="Conte-nos sobre seu projeto ou dúvida..."></textarea>
+                            <small id="mensagem-help">Quanto mais detalhes, melhor poderemos ajudá-lo.</small>
+                            <span id="mensagem-error" class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                                Quero receber novidades e dicas sobre desenvolvimento web
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <h2>Fale Conosco</h2>
-            <p>Entre em contato preenchendo o formulário abaixo.</p>
-        </div>
-    </section>
-    <section class="container">
-        <div class="contato-box">
-            <form class="form-contato">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
-            <nav>
-                <a href="../index.html">Política de Privacidade</a>
-                <a href="../index.html">Termos de Uso</a>
-            </nav>
+            <div class="footer-content">
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <ul>
+                        <li><a href="politica-privacidade.html" rel="noopener">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html" rel="noopener">Termos de Uso</a></li>
+                        <li><a href="cookies.html" rel="noopener">Cookies</a></li>
+                        <li><a href="suporte.html" rel="noopener">Suporte</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>

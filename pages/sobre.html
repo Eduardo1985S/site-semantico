@@ -1,52 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>Sobre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça nossa missão, valores e equipe dedicada ao desenvolvimento web moderno e acessível.">
+    <title>Sobre Nós - Minha Página Exemplo</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header" role="banner">
         <div class="container">
-            <h1>Sobre</h1>
-            <nav>
-                <a href="../index.html">Início</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+            <div class="header-content">
+                <h1 class="site-title">Sobre Nós</h1>
+                <nav class="main-nav" role="navigation" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="sobre.html" aria-current="page" class="active">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section class="banner">
+
+    <main role="main">
+        <section class="hero-banner" aria-labelledby="about-hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 id="about-hero-title">Construindo o Futuro da Web</h2>
+                    <p>Conheça nossa história, valores e a paixão que nos move a criar experiências digitais
+                        extraordinárias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <div class="container">
+                <article class="about-content">
+                    <h3>Nossa Missão</h3>
+                    <p>Capacitar empresas e desenvolvedores com soluções web modernas, acessíveis e de alta performance.
+                        Acreditamos que a tecnologia deve ser uma ponte para conectar pessoas e criar oportunidades, não
+                        uma barreira.</p>
+
+                    <h3>Quem Somos</h3>
+                    <p>Somos uma equipe apaixonada por tecnologia e design, composta por desenvolvedores, designers e
+                        estrategistas digitais com anos de experiência em criar soluções web inovadoras. Nossa expertise
+                        abrange desde desenvolvimento frontend até arquiteturas complexas de backend.</p>
+
+                    <h3>Nossos Valores</h3>
+                    <ul class="values-list">
+                        <li><strong>Excelência Técnica:</strong> Sempre buscamos as melhores práticas e tecnologias mais
+                            recentes</li>
+                        <li><strong>Acessibilidade Universal:</strong> Criamos experiências inclusivas para todos os
+                            usuários</li>
+                        <li><strong>Performance Otimizada:</strong> Cada linha de código é pensada para máxima
+                            eficiência</li>
+                        <li><strong>Colaboração Transparente:</strong> Trabalhamos lado a lado com nossos clientes e
+                            comunidade</li>
+                        <li><strong>Inovação Constante:</strong> Sempre explorando novas possibilidades tecnológicas
+                        </li>
+                        <li><strong>Sustentabilidade Digital:</strong> Desenvolvimento responsável e eco-friendly</li>
+                    </ul>
+
+                    <h3>Nossa Visão</h3>
+                    <p>Ser referência em desenvolvimento web semântico e acessível, inspirando uma nova geração de
+                        desenvolvedores a criar soluções que fazem a diferença na vida das pessoas e no mundo digital.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <h2>Sobre o Projeto</h2>
-            <p>Esta página apresenta informações sobre o site e sua proposta.</p>
-        </div>
-    </section>
-    <section class="container">
-        <div class="sobre-box">
-            <h3>Nossa Missão</h3>
-            <p>Oferecer conteúdo de qualidade e exemplos práticos para aprendizado de HTML e CSS semântico.</p>
-            <h3>Quem Somos</h3>
-            <p>Somos apaixonados por web, focados em ensinar boas práticas e semântica para todos os níveis de
-                desenvolvedores.</p>
-            <h3>Valores</h3>
-            <ul class="valores-lista">
-                <li>Didática clara</li>
-                <li>Exemplos práticos</li>
-                <li>Semântica e acessibilidade</li>
-                <li>Comunidade e colaboração</li>
-            </ul>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
-            <nav>
-                <a href="../index.html">Política de Privacidade</a>
-                <a href="../index.html">Termos de Uso</a>
-            </nav>
+            <div class="footer-content">
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <ul>
+                        <li><a href="politica-privacidade.html" rel="noopener">Política de Privacidade</a></li>
+                        <li><a href="termos-uso.html" rel="noopener">Termos de Uso</a></li>
+                        <li><a href="cookies.html" rel="noopener">Cookies</a></li>
+                        <li><a href="suporte.html" rel="noopener">Suporte</a></li>
+                    </ul>
+                </nav>
+                <p class="copyright">&copy; 2025 Minha Página Exemplo. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>
