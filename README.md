@@ -279,7 +279,7 @@ Contribuições são bem-vindas! Por favor:
 
 **Seu Nome**
 - GitHub: [@eduardo1985s](https://github.com/seu-usuario)
-- LinkedIn: [Seu Perfil]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/eduardo-correia-dev/))
+- LinkedIn: [eduardo-correia]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/eduardo-correia-dev/))
 - Email: edutechtreinamentos@gmail.com
 
 ## 🙏 Agradecimentos
